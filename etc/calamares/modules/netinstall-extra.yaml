@@ -1,0 +1,26 @@
+groups:
+  - name: "Optinal Applications"
+    description: "Choose additional software to install"
+    expanded: true 
+    selected: false
+    packages:
+      - name: "libreoffice-fresh"
+        description: "Full-featured office productivity suite"
+      - name: "gimp"
+        description: "Advanced image editor"
+      - name: "code"
+        description: "Visual Studio Code (vscode) editor"
+      - name: "meld"
+        description: "Compare files, directories and working copies"
+      - name: "obs-studio"
+        description: "Free, open source software for live streaming and recording"
+      - name: "inkscape"
+        description: "Professional vector graphics editor"
+      - name: "krita"
+        description: "Edit and paint images"
+      - name: "telegram-desktop"
+        description: "Official Telegram Desktop client"
+      - name: "thunderbird"
+        description: "Standalone mail and news reader from mozilla.org"
+      - name: "kdeconnect"
+        description: "Adds communication between KDE and your smartphone"
