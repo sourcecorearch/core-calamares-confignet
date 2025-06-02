@@ -22,5 +22,3 @@ groups:
         description: "Official Telegram Desktop client"
       - name: "thunderbird"
         description: "Standalone mail and news reader from mozilla.org"
-      - name: "kdeconnect"
-        description: "Adds communication between KDE and your smartphone"
