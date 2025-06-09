@@ -1,7 +1,7 @@
 groups:
   - name: "Drivers NVIDIA"
     description: " driver NVIDIA."
-    expanded: false
+    expanded: true 
     selected: false
     packages:
       - name: "nvidia"
