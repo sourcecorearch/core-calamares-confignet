@@ -56,8 +56,6 @@ QDialogButtonBox {
 	qproperty-icon: url(/etc/calamares/branding/default/icons/about.svg);
 }
 
-#debugButton,
-#aboutButton,
 #donateButton,
 #supportButton,
 #releaseNotesButton,
