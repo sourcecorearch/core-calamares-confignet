@@ -219,18 +219,18 @@ QToolButton::icon {
     color: #ffffff;
 }
 
-/* Ajustar la barra de desplazamiento a un tono de gris m·s claro */
+/* Ajustar la barra de desplazamiento a un tono de gris m√°s claro */
 QScrollBar:vertical, QScrollBar:horizontal {
-    border: 1px solid #3A3F4B; /* Gris m·s claro */
+    border: 1px solid #3A3F4B; /* Gris m√°s claro */
     background: #3A3F4B;
-    width: 10px; /* Ajusta el ancho seg˙n prefieras */
+    width: 10px; /* Ajusta el ancho seg√∫n prefieras */
 }
 
 /* Personalizar el "handle" (parte movible de la barra) */
 QScrollBar::handle:vertical, QScrollBar::handle:horizontal {
     background: #2D303B; /* Mantiene el tono del tema */
     border-radius: 2px;
-    min-height: 20px; /* Ajusta la altura mÌnima */
+    min-height: 20px; /* Ajusta la altura m√≠nima */
 }
 
 /* Cambio de color cuando el mouse pasa sobre el handle */
@@ -256,15 +256,11 @@ QScrollBar::left-arrow:horizontal, QScrollBar::right-arrow:horizontal {
 #partitionBarView {
 background-color: #1E2128;  /* Fondo oscuro */
 border: 1px solid #2D303B;  /* Borde sutil */
-min-height: 40px;           /* Altura mÌnima para asegurar visibilidad */
+min-height: 40px;           /* Altura m√≠nima para asegurar visibilidad */
 margin: 5px;
 }
 
 
-#bootInfoIcon { 
-}
-#bootInfoLable {
-}
 #deviceInfoIcon {
 }
 #defineInfoLabel {
