@@ -1,4 +1,10 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Redirect standard error to standard output since calamares doesn't
+# capture stderr
+exec 2>&1
 
 pacman-key --init
-pacman-key --populate archlinux
+
+for ((i=0; i<8; i++)); do pacman -Sy --noconfirm archlinux-keyring && break; done
+
+pacman-key --populate
