@@ -1,16 +1,128 @@
-groups:
-  - name: "Optinal Applications"
-    description: "Choose additional software to install"
-    expanded: true 
-    selected: false
-    packages:
-      - name: "libreoffice-fresh"
-        description: "Full-featured office productivity suite"
-      - name: "gimp"
-        description: "Advanced image editor"
-      - name: "code"
-        description: "Visual Studio Code (vscode) editor"
-      - name: "obs-studio"
-        description: "Free, open source software for live streaming and recording"
-      - name: "telegram-desktop"
-        description: "Official Telegram Desktop client"
+- name: "Base-devel + Common packages"
+  description: "Recommended. Don't change unless you know what you're doing (generic)."
+  hidden: false
+  selected: true
+  critical: true
+  subgroups:
+      - name: "firewall"
+        description: "Firewall support"
+        selected: true
+        packages:
+          - ufw
+      - name: "bluetooth"
+        description: "Bluetooth support"
+        selected: true
+        packages:
+          - bluez
+          - bluez-hid2hci
+          - bluez-libs
+          - bluez-utils    
+      - name: "packages management"
+        description: "Packages tools"
+        selected: true
+        packages:
+          - pacman-contrib
+          - reflector
+          - paru
+          - octopi
+      - name: "desktop integration"
+        description: "Useful helper tools and libs for desktop usage"
+        selected: true
+        packages:
+          - bash-completion
+          - ffmpegthumbnailer
+          - gst-libav
+          - gst-plugin-pipewire
+          - gst-plugins-bad
+          - gst-plugins-ugly
+          - libdvdcss
+          - libgsf
+          - libopenraw
+          - mlocate
+          - poppler-glib
+          - xdg-user-dirs
+          - xdg-utils    
+      - name: "fonts"
+        description: "font selection"
+        selected: false
+        packages:
+          - adobe-source-han-sans-cn-fonts
+          - adobe-source-han-sans-jp-fonts
+          - adobe-source-han-sans-kr-fonts
+          - awesome-terminal-fonts
+          - noto-fonts-emoji
+          - noto-color-emoji-fontconfig
+          - cantarell-fonts
+          - freetype2
+          - noto-fonts
+          - opendesktop-fonts
+          - ttf-bitstream-vera
+          - ttf-dejavu
+          - ttf-liberation
+          - ttf-opensans
+          - ttf-meslo-nerd
+          - noto-fonts-cjk
+      - name: "Some applications selection"
+        description: "General tools and applications"
+        selected: true
+        packages:
+          - alacritty
+          - btop
+          - duf
+          - git
+          - hwinfo
+          - inxi
+          - meld
+          - nano-syntax-highlighting
+          - rsync
+          - sed
+          - vi
+          - wget
+          - ripgrep
+          - vim
+          - openssh    
+
+- name: "LibreOffice and language pack"
+  description: "Install LibreOffice with language support"
+  hidden: false
+  expanded: false
+  selected: true
+  critical: false
+  packages:
+    - libreoffice-fresh
+    - libreoffice-fresh-$LOCALE
+
+- name: "Optional Applications"
+  description: "Choose additional software to install"
+  hidden: false
+  expanded: false
+  selected: false
+  critical: false
+  packages:
+    - name: gimp
+    - name: code
+    - name: obs-studio
+    - name: telegram-desktop
+
+- name: "Microcode Packages"
+  description: "Install CPU microcode packages"
+  hidden: false
+  expanded: false
+  selected: true
+  critical: true
+  packages:
+    - intel-ucode
+    - amd-ucode
+
+- name: "Support for HP Printer/Scanner"
+  description: "Extra Packages for HP Printer/Scanner"
+  hidden: false
+  selected: false
+  critical: true
+  packages:
+    - hplip
+    - python-pyqt5
+    - python-reportlab
+    - cups
+    - cups-filters
+    - cups-pdf
