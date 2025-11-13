@@ -11,7 +11,7 @@
           - ufw
       - name: "bluetooth"
         description: "Bluetooth support"
-        selected: true
+        selected: false
         packages:
           - bluez
           - bluez-hid2hci
@@ -23,25 +23,13 @@
         packages:
           - pacman-contrib
           - reflector
-          - paru
           - octopi
       - name: "desktop integration"
         description: "Useful helper tools and libs for desktop usage"
         selected: true
         packages:
           - bash-completion
-          - ffmpegthumbnailer
-          - gst-libav
-          - gst-plugin-pipewire
-          - gst-plugins-bad
-          - gst-plugins-ugly
-          - libdvdcss
-          - libgsf
-          - libopenraw
-          - mlocate
-          - poppler-glib
-          - xdg-user-dirs
-          - xdg-utils    
+          - plocate
       - name: "fonts"
         description: "font selection"
         selected: false
@@ -64,7 +52,7 @@
           - noto-fonts-cjk
       - name: "Some applications selection"
         description: "General tools and applications"
-        selected: true
+        selected: false
         packages:
           - alacritty
           - btop
@@ -76,7 +64,6 @@
           - nano-syntax-highlighting
           - rsync
           - sed
-          - vi
           - wget
           - ripgrep
           - vim
@@ -113,16 +100,3 @@
   packages:
     - intel-ucode
     - amd-ucode
-
-- name: "Support for HP Printer/Scanner"
-  description: "Extra Packages for HP Printer/Scanner"
-  hidden: false
-  selected: false
-  critical: true
-  packages:
-    - hplip
-    - python-pyqt5
-    - python-reportlab
-    - cups
-    - cups-filters
-    - cups-pdf
