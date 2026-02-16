@@ -16,7 +16,6 @@ Presentation
     id: presentation
 
     function nextSlide() {
-        console.log("QML Component (default slideshow) Next slide");
         presentation.goToNextSlide();
     }
 
@@ -60,12 +59,10 @@ Presentation
 
 
     function onActivate() {
-        console.log("QML Component (default slideshow) activated");
         presentation.currentSlide = 0;
     }
 
     function onLeave() {
-        console.log("QML Component (default slideshow) deactivated");
     }
 
 }
