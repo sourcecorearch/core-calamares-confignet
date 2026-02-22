@@ -121,13 +121,13 @@ navigation: widget
 # are visible as buttons there if the corresponding *show* keys
 # are set to "true" (they can also be overridden).
 strings:
-    productName:         EosOS GNU/Linux
-    shortProductName:    EosOS GNU/Linux - Lite
+    productName:         Core Linux
+    shortProductName:    Core Linux 
    # version:             2025.01.1
    # shortVersion:        2025.01.1
-    versionedName:       EosOS GNU/Linux - Lite
-    shortVersionedName:  EosOS GNU/Linux - Lite
-    bootloaderEntryName: EosOS
+    versionedName:       Core Linux
+    shortVersionedName:  Core Linux 
+    bootloaderEntryName: Core
 
 # These images are loaded from the branding module directory.
 #
@@ -178,7 +178,7 @@ style:
    SidebarBackground:    "#252931"
    SidebarText:          "#FFFFFF"
    SidebarTextCurrent:       "#FFFFFF"
-   SidebarBackgroundCurrent: "#c05ce1"
+   SidebarBackgroundCurrent: "#209fb5"
 
 ### SLIDESHOW
 #
